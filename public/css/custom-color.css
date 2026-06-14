@@ -1,0 +1,176 @@
+/* Transition untuk sidebar */
+.sidebar-transition {
+  transition:
+    width 0.3s ease,
+    transform 0.3s ease;
+}
+/* Styling untuk konten yang menyesuaikan sidebar */
+.content-with-sidebar {
+  transition:
+    margin-left 0.3s ease,
+    width 0.3s ease;
+}
+
+/* Untuk layar mobile */
+@media (max-width: 767px) {
+  .content-with-sidebar {
+    margin-left: 0 !important;
+  }
+}
+
+/* Pastikan scroll container tidak mempengaruhi layout */
+body {
+  overflow-x: hidden;
+}
+
+/* Sistem warna tema dengan HSL */
+:root {
+  /* Warna utama - Merah (default) */
+  --hue: 351;
+  --ki-50: hsl(var(--hue), 95%, 95%);
+  --ki-100: hsl(var(--hue), 90%, 90%);
+  --ki-200: hsl(var(--hue), 85%, 80%);
+  --ki-300: hsl(var(--hue), 80%, 70%);
+  --ki-400: hsl(var(--hue), 75%, 60%);
+  --ki-500: hsl(var(--hue), 70%, 50%);
+  --ki-600: hsl(var(--hue), 65%, 40%);
+  --ki-700: hsl(var(--hue), 60%, 30%);
+  --ki-800: hsl(var(--hue), 55%, 20%);
+  --ki-900: hsl(var(--hue), 50%, 10%);
+
+  /* Warna alternatif - Biru */
+  --hue-blue: 210;
+  --ki-blue-50: hsl(var(--hue-blue), 95%, 95%);
+  --ki-blue-500: hsl(var(--hue-blue), 70%, 50%);
+  --ki-blue-700: hsl(var(--hue-blue), 60%, 30%);
+
+  /* Warna alternatif - Hijau */
+  --hue-green: 142;
+  --ki-green-50: hsl(var(--hue-green), 95%, 95%);
+  --ki-green-500: hsl(var(--hue-green), 70%, 50%);
+  --ki-green-700: hsl(var(--hue-green), 60%, 30%);
+
+  /* Warna alternatif - Ungu */
+  --hue-purple: 270;
+  --ki-purple-50: hsl(var(--hue-purple), 95%, 95%);
+  --ki-purple-500: hsl(var(--hue-purple), 70%, 50%);
+  --ki-purple-700: hsl(var(--hue-purple), 60%, 30%);
+
+  /* Warna alternatif - Oranye */
+  --hue-orange: 30;
+  --ki-orange-50: hsl(var(--hue-orange), 95%, 95%);
+  --ki-orange-500: hsl(var(--hue-orange), 70%, 50%);
+  --ki-orange-700: hsl(var(--hue-orange), 60%, 30%);
+}
+
+/* Utility classes untuk warna teks */
+.text-ki-50 {
+  color: var(--ki-50);
+}
+.text-ki-100 {
+  color: var(--ki-100);
+}
+.text-ki-200 {
+  color: var(--ki-200);
+}
+.text-ki-300 {
+  color: var(--ki-300);
+}
+.text-ki-400 {
+  color: var(--ki-400);
+}
+.text-ki-500 {
+  color: var(--ki-500);
+}
+.text-ki-600 {
+  color: var(--ki-600);
+}
+.text-ki-700 {
+  color: var(--ki-700);
+}
+.text-ki-800 {
+  color: var(--ki-800);
+}
+.text-ki-900 {
+  color: var(--ki-900);
+}
+
+/* Utility classes untuk background */
+.bg-ki-50 {
+  background-color: var(--ki-50);
+}
+.bg-ki-100 {
+  background-color: var(--ki-100);
+}
+.bg-ki-200 {
+  background-color: var(--ki-200);
+}
+.bg-ki-300 {
+  background-color: var(--ki-300);
+}
+.bg-ki-400 {
+  background-color: var(--ki-400);
+}
+.bg-ki-500 {
+  background-color: var(--ki-500);
+}
+.bg-ki-600 {
+  background-color: var(--ki-600);
+}
+.bg-ki-700 {
+  background-color: var(--ki-700);
+}
+.bg-ki-800 {
+  background-color: var(--ki-800);
+}
+.bg-ki-900 {
+  background-color: var(--ki-900);
+}
+
+/* Hover states */
+.hover\:text-ki-50:hover {
+  color: var(--ki-50);
+}
+.hover\:text-ki-500:hover {
+  color: var(--ki-500);
+}
+.hover\:text-ki-600:hover {
+  color: var(--ki-600);
+}
+.hover\:text-ki-700:hover {
+  color: var(--ki-700);
+}
+
+.hover\:bg-ki-50:hover {
+  background-color: var(--ki-50);
+}
+.hover\:bg-ki-500:hover {
+  background-color: var(--ki-500);
+}
+.hover\:bg-ki-600:hover {
+  background-color: var(--ki-600);
+}
+.hover\:bg-ki-700:hover {
+  background-color: var(--ki-700);
+}
+
+/* Warna alternatif yang dapat digunakan */
+.text-ki-blue-500 {
+  color: var(--ki-blue-500);
+}
+.bg-ki-blue-50 {
+  background-color: var(--ki-blue-50);
+}
+.bg-ki-blue-700 {
+  background-color: var(--ki-blue-700);
+}
+
+.text-ki-green-500 {
+  color: var(--ki-green-500);
+}
+.bg-ki-green-50 {
+  background-color: var(--ki-green-50);
+}
+.bg-ki-green-700 {
+  background-color: var(--ki-green-700);
+}

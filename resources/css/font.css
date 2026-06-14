@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "Heading Now Regular";
+  src: url("/fonts/heading_now/HeadingNowTrial-54Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Heading Now Bold";
+  src: url("/fonts/heading_now/HeadingNowTrial-56Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Heading Now Light";
+  src: url("/fonts/heading_now/HeadingNowTrial-52Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Heading Now Thin";
+  src: url("/fonts/heading_now/HeadingNowTrial-51Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-heading-regular {
+  font-family: "Heading Now Regular", sans-serif;
+}
+
+.font-heading-light {
+  font-family: "Heading Now Light", sans-serif;
+}
+
+.font-heading-thin {
+  font-family: "Heading Now Thin", sans-serif;
+}
+
+.font-heading-bold {
+  font-family: "Heading Now Bold", sans-serif;
+}
+.font-heading-regular-stroke {
+  font-family: "Heading Now Regular", sans-serif;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.font-heading-bold-stroke {
+  font-family: "Heading Now Bold", sans-serif;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+@media (min-width: 368px) and (max-width: 1024px) {
+  .font-heading-regular-stroke,
+  .font-heading-bold-stroke {
+    -webkit-text-stroke-width: 0.5px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .font-heading-regular-stroke,
+  .font-heading-bold-stroke {
+    -webkit-text-stroke-width: 1px;
+  }
+}
+
+
+

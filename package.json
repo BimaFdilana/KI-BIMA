@@ -1,0 +1,43 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite",
+    "tailwind:init": "tailwindcss init"
+  },
+  "dependencies": {
+    "@preline/file-upload": "^3.0.0",
+    "axios": "^1.10.0",
+    "chart.js": "^4.5.1",
+    "datatables.net": "^2.2.2",
+    "datatables.net-bs4": "^2.2.2",
+    "datatables.net-buttons": "^3.2.3",
+    "datatables.net-buttons-bs4": "^3.2.3",
+    "dropzone": "^6.0.0-beta.2",
+    "jszip": "^3.10.1",
+    "keen-slider": "^6.8.6",
+    "laravel-vite-plugin": "^1.0",
+    "lodash": "^4.17.21",
+    "pdfmake": "^0.2.19",
+    "preline": "^3.0.1",
+    "tailwindcss-animated": "^2.0.0",
+    "vite": "^6.0"
+  },
+  "optionalDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "4.9.5",
+    "@tailwindcss/oxide-linux-x64-gnu": "^4.0.1",
+    "lightningcss-linux-x64-gnu": "^1.29.1"
+  },
+  "devDependencies": {
+    "@designbycode/tailwindcss-text-stroke": "^1.3.0",
+    "@tailwindcss/vite": "^4.1.4",
+    "autoprefixer": "^10.4.21",
+    "concurrently": "^9.1.2",
+    "daisyui": "^5.0.18",
+    "laravel-echo": "^2.2.6",
+    "postcss": "^8.5.3",
+    "pusher-js": "^8.4.0",
+    "tailwindcss": "^4.1.4"
+  }
+}

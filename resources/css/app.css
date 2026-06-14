@@ -1,0 +1,61 @@
+@import "tailwindcss";
+@import "tailwindcss-animated";
+@plugin "daisyui";
+@plugin "@designbycode/tailwindcss-text-stroke";
+@import "./font.css";
+
+/* Preline UI */
+@import "../../node_modules/preline/variants.css";
+@source "../../node_modules/preline/dist/*.js";
+
+/* Dropzone Styles */
+@import "../../node_modules/dropzone/dist/dropzone.css";
+
+@media (prefers-color-scheme: dark) {
+    * {
+      /* Override semua dark mode styles */
+    }
+  }
+  
+  @supports (color-scheme: dark) {
+    :root {
+      color-scheme: light only;
+    }
+  }
+/* Preline File Upload Styles */
+/* Custom Dropzone Styling */
+.dropzone {
+    @apply border-2 border-dashed border-gray-300 rounded-lg p-6 text-center cursor-pointer transition-colors duration-200;
+}
+
+.dropzone:hover {
+    @apply border-blue-400 bg-blue-50;
+}
+
+.dropzone.dz-drag-hover {
+    @apply border-blue-500 bg-blue-100;
+}
+
+.dropzone .dz-message {
+    @apply text-gray-600 font-medium;
+}
+
+.dropzone .dz-preview {
+    @apply m-2;
+}
+
+.dropzone .dz-preview .dz-image {
+    @apply rounded-md overflow-hidden;
+}
+
+.dropzone .dz-preview .dz-details {
+    @apply text-sm text-gray-500;
+}
+
+.dropzone .dz-preview .dz-progress {
+    @apply bg-gray-200 rounded-full h-2 overflow-hidden;
+}
+
+.dropzone .dz-preview .dz-progress .dz-upload {
+    @apply bg-blue-500 h-full transition-all duration-300;
+}

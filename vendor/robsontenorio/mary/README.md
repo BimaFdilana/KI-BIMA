@@ -1,0 +1,72 @@
+<p align="center"><img width="200" src="https://github.com/robsontenorio/mary-ui.com/blob/main/public/images/mary.png?raw=true"></p>
+
+<p align="center">
+    <a href="https://packagist.org/packages/robsontenorio/mary">
+        <img src="https://img.shields.io/packagist/dt/robsontenorio/mary?cacheSeconds=60">
+    </a>
+    <a href="https://packagist.org/packages/robsontenorio/mary">
+        <img src="https://img.shields.io/packagist/v/robsontenorio/mary?label=stable&color=blue&cacheSeconds=60">
+    </a>
+    <a href="https://packagist.org/packages/robsontenorio/mary">
+        <img src="https://poser.pugx.org/robsontenorio/mary/license.svg">
+    </a>
+</p>
+
+## Introduction
+
+The maryUI package is a set of Gorgeous UI components for Livewire powered by daisyUI and Tailwind.
+
+## Official Documentation
+
+You can read the official documentation on the [maryUI website](https://mary-ui.com).
+
+## Sponsor
+
+Let's keep pushing it, [sponsor me](https://github.com/sponsors/robsontenorio) ❤️
+
+## Discord
+
+Come to say hello on [maryUI Discord](https://discord.gg/c2Dv8T2X2s)
+
+## Follow me
+
+[@robsontenorio](https://twitter.com/robsontenorio)
+
+## Contributing
+
+Clone the repository into your project root.
+
+```bash
+git clone git@github.com:robsontenorio/mary.git packages/mary
+```
+
+Add the local repository to composer config.
+
+```bash
+composer config repositories.local '{"type": "path", "url": "packages/mary"}'
+```
+
+Require the package again for local symlink.
+
+```bash
+composer require robsontenorio/mary:@dev
+```
+
+Start the dev server.
+
+```bash
+yarn dev
+```
+
+You can roll back to the stable version by removing the local repository and requiring the package again.
+
+```bash
+composer config --unset repositories.local
+composer require robsontenorio/mary
+```
+
+## License
+
+<a name="license"></a>
+
+MaryUI is open-sourced software licensed under the [MIT license](/license.md).
