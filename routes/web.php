@@ -407,6 +407,26 @@ Route::get('/layanan/jualan-detail', function () {
     return view('guest.jualan_detail'); // Mengarah ke file blade baru yang akan kita buat
 })->name('jualan.detail');
 
+// Tambahkan ini di routes/web.php
+Route::get('/layanan/laporan-detail', function () {
+    return view('guest.laporan_detail'); // Mengarah ke folder guest
+})->name('laporan.detail');
+
+// Tambahkan ini di routes/web.php
+Route::get('/layanan/analisis-detail', function () {
+    return view('guest.analisis_detail'); // Mengarah ke folder guest
+})->name('analisis.detail');
+
+// Tambahkan ini di routes/web.php
+Route::get('/layanan/komunitas-detail', function () {
+    return view('guest.komunitas_detail'); // Mengarah ke folder guest
+})->name('komunitas.detail');
+
+// Tambahkan ini di routes/web.php
+Route::get('/layanan/informasi-detail', function () {
+    return view('guest.informasi_detail'); // Mengarah ke folder guest
+})->name('informasi.detail');
+
 // Information Routes
 Route::get('/information', function () {
     return view('guest.information.index');

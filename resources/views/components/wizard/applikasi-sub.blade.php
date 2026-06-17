@@ -197,7 +197,7 @@
         Kelola usaha lebih mudah melalui fitur <br> Belanja, Jualan, Laporan, Analisis, Komunitas, dan Informasi.
     </p>
 </div>
-        <div class="slider-container mx-4 mb-12 flex flex-col items-center gap-8 text-wrap md:flex-row md:gap-12">
+<div class="slider-container mx-4 mb-12 flex flex-col items-center gap-8 text-wrap md:flex-row md:gap-12">
             <div class="flex justify-center gap-4 lg:hidden">
                 <button type="button" id="app-slider-previous"
                     class="slider-nav-btn prev group z-30 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-white shadow-md focus:outline-none">
@@ -221,7 +221,7 @@
     class="services mb-4 flex cursor-pointer flex-col items-center justify-center md:mb-0">
 
     <div
-        class="app-icon flex w-16 items-center justify-center rounded-2xl p-2 text-gray-50 transition-all duration-300 sm:w-12 md:w-12 lg:w-28"
+        class="app-icon flex w-16 items-center justify-center rounded-2xl p-3.5 text-gray-50 transition-all duration-300 sm:w-12 md:w-12 lg:w-28"
         :class="activeApp === 'belanja'
             ? 'active bg-red-600 shadow-xl shadow-red-500/40'
             : 'hover:-translate-y-1 hover:shadow-lg'">
@@ -229,7 +229,7 @@
         <img
             src="{{ asset('storage/assets_images/images/sub-app/BelanjaLogo.png') }}"
             alt="Belanja Logo"
-            class="transition-transform duration-300"
+            class="transition-transform duration-300 w-full h-auto object-contain"
             :class="activeApp === 'belanja'
                 ? 'scale-105'
                 : 'group-hover:scale-105'">
@@ -265,15 +265,15 @@
     class="services mb-4 flex cursor-pointer flex-col items-center justify-center md:mb-0">
 
     <div
-        class="app-icon flex w-16 items-center justify-center rounded-2xl p-2 text-gray-50 transition-all duration-300 sm:w-12 md:w-12 lg:w-28"
+        class="app-icon flex w-16 items-center justify-center rounded-2xl p-3.5 text-gray-50 transition-all duration-300 sm:w-12 md:w-12 lg:w-28"
         :class="activeApp === 'jualan'
-            ? 'active bg-white-600 shadow-xl shadow-white-500/40'
-            : 'shadow-none'">
+            ? 'active bg-red-600 shadow-xl shadow-red-500/40'
+            : 'hover:-translate-y-1 hover:shadow-lg'">
 
         <img
             src="{{ asset('storage/assets_images/images/sub-app/JualanLogo.png') }}"
             alt="Jualan Logo"
-            class="transition-transform duration-300"
+            class="transition-transform duration-300 w-full h-auto object-contain"
             :class="activeApp === 'jualan'
                 ? 'scale-105'
                 : ''">
@@ -309,7 +309,7 @@
     class="services mb-4 flex cursor-pointer flex-col items-center justify-center md:mb-0">
 
     <div
-        class="app-icon flex w-16 items-center justify-center rounded-2xl p-2 text-gray-50 transition-all duration-300 sm:w-12 md:w-12 lg:w-28"
+        class="app-icon flex w-16 items-center justify-center rounded-2xl p-3.5 text-gray-50 transition-all duration-300 sm:w-12 md:w-12 lg:w-28"
         :class="activeApp === 'laporan'
             ? 'active bg-red-600 shadow-xl shadow-red-500/40'
             : 'hover:-translate-y-1 hover:shadow-lg'">
@@ -317,7 +317,7 @@
         <img
             src="{{ asset('storage/assets_images/images/sub-app/LaporanLogo.png') }}"
             alt="Laporan Logo"
-            class="transition-transform duration-300"
+            class="transition-transform duration-300 w-full h-auto object-contain"
             :class="activeApp === 'laporan'
                 ? 'scale-105'
                 : 'group-hover:scale-105'">
@@ -353,7 +353,7 @@
     class="services mb-4 flex cursor-pointer flex-col items-center justify-center md:mb-0">
 
     <div
-        class="app-icon flex w-16 items-center justify-center rounded-2xl p-2 text-gray-50 transition-all duration-300 sm:w-12 md:w-12 lg:w-28"
+        class="app-icon flex w-16 items-center justify-center rounded-2xl p-3.5 text-gray-50 transition-all duration-300 sm:w-12 md:w-12 lg:w-28"
         :class="activeApp === 'analisis'
             ? 'active bg-red-600 shadow-xl shadow-red-500/40'
             : 'hover:-translate-y-1 hover:shadow-lg'">
@@ -361,7 +361,7 @@
         <img
             src="{{ asset('storage/assets_images/images/sub-app/AnalisisLogo.png') }}"
             alt="Analisis Logo"
-            class="transition-transform duration-300"
+            class="transition-transform duration-300 w-full h-auto object-contain"
             :class="activeApp === 'analisis'
                 ? 'scale-105'
                 : 'group-hover:scale-105'">
@@ -397,7 +397,7 @@
     class="services mb-4 flex cursor-pointer flex-col items-center justify-center md:mb-0">
 
     <div
-        class="app-icon flex w-16 items-center justify-center rounded-2xl p-2 text-gray-50 transition-all duration-300 sm:w-12 md:w-12 lg:w-28"
+        class="app-icon flex w-16 items-center justify-center rounded-2xl p-3.5 text-gray-50 transition-all duration-300 sm:w-12 md:w-12 lg:w-28"
         :class="activeApp === 'komunitas'
             ? 'active bg-red-600 shadow-xl shadow-red-500/40'
             : 'hover:-translate-y-1 hover:shadow-lg'">
@@ -405,7 +405,7 @@
         <img
             src="{{ asset('storage/assets_images/images/sub-app/KomunitasLogo.png') }}"
             alt="Komunitas Logo"
-            class="transition-transform duration-300"
+            class="transition-transform duration-300 w-full h-auto object-contain"
             :class="activeApp === 'komunitas'
                 ? 'scale-105'
                 : 'group-hover:scale-105'">
@@ -441,7 +441,7 @@
     class="services mb-4 flex cursor-pointer flex-col items-center justify-center md:mb-0">
 
     <div
-        class="app-icon flex w-16 items-center justify-center rounded-2xl p-2 text-gray-50 transition-all duration-300 sm:w-12 md:w-12 lg:w-28"
+        class="app-icon flex w-16 items-center justify-center rounded-2xl p-3.5 text-gray-50 transition-all duration-300 sm:w-12 md:w-12 lg:w-28"
         :class="activeApp === 'informasi'
             ? 'active bg-red-600 shadow-xl shadow-red-500/40'
             : 'hover:-translate-y-1 hover:shadow-lg'">
@@ -449,7 +449,7 @@
         <img
             src="{{ asset('storage/assets_images/images/sub-app/InformasiLogo.png') }}"
             alt="Belanja Logo"
-            class="transition-transform duration-300"
+            class="transition-transform duration-300 w-full h-auto object-contain"
             :class="activeApp === 'informasi'
                 ? 'scale-105'
                 : 'group-hover:scale-105'">
@@ -489,7 +489,7 @@
                 </button>
             </div>
         </div>
-
+        
         <!-- App Info Sections -->
         <div id="app-info-section" x-show="showInfo" x-transition:enter="transition ease-out duration-300"
             x-transition:enter-start="opacity-0 transform translate-y-10"
@@ -1271,29 +1271,16 @@
 
         </div>
 
-        <div class="mt-8 text-center">
-
-            <a href="#"
-                class="inline-flex items-center rounded-lg bg-amber-600 px-6 py-3 font-medium text-white transition-colors hover:bg-amber-700">
-
-                Lihat Semua Laporan
-
-                <svg class="ml-2 h-5 w-5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24">
-
-                    <path stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M14 5l7 7m0 0l-7 7m7-7H3">
-                    </path>
-
-                </svg>
-
-            </a>
-
-        </div>
+        <!-- UBAH BAGIAN TOMBOL PALING BAWAH MENJADI SEPERTI INI -->
+<div class="mt-8 text-center">
+    <a href="{{ route('laporan.detail') }}"
+        class="inline-flex items-center rounded-lg bg-amber-600 px-6 py-3 font-medium text-white transition-colors hover:bg-amber-700 group shadow-md">
+        <span>Selengkapnya</span>
+        <!-- <svg class="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+        </svg> -->
+    </a>
+</div>
 
     </div>
 
@@ -1653,26 +1640,16 @@
         </div>
 
         <!-- Button -->
-        <div class="mt-8 text-center">
-
-            <a href="#"
-               class="inline-flex items-center rounded-lg bg-purple-600 px-6 py-3 font-medium text-white transition-colors hover:bg-purple-700">
-
-                Mulai Analisis Bisnis
-
-                <svg class="ml-2 h-5 w-5"
-                     fill="none"
-                     stroke="currentColor"
-                     viewBox="0 0 24 24">
-                    <path stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                </svg>
-
-            </a>
-
-        </div>
+        <!-- UBAH BAGIAN TOMBOL PALING BAWAH MENJADI SEPERTI INI -->
+<div class="mt-8 text-center">
+    <a href="{{ route('analisis.detail') }}"
+       class="inline-flex items-center rounded-lg bg-purple-600 px-6 py-3 font-medium text-white transition-colors hover:bg-purple-700 group shadow-md">
+        <span>Selengkapnya</span>
+        <!-- <svg class="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+        </svg> -->
+    </a>
+</div>
 
     </div>
 
@@ -1914,27 +1891,16 @@
 
         </div>
 
-        <!-- Button -->
-        <div class="mt-8 text-center">
-
-            <a href="#"
-                class="inline-flex items-center rounded-lg bg-rose-600 px-6 py-3 font-medium text-white transition-colors hover:bg-rose-700">
-
-                Bergabung dengan Komunitas
-
-                <svg class="ml-2 h-5 w-5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24">
-                    <path stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                </svg>
-
-            </a>
-
-        </div>
+        <!-- UBAH BAGIAN TOMBOL PALING BAWAH MENJADI SEPERTI INI -->
+<div class="mt-8 text-center">
+    <a href="{{ route('komunitas.detail') }}"
+       class="inline-flex items-center rounded-lg bg-rose-600 px-6 py-3 font-medium text-white transition-colors hover:bg-rose-700 group shadow-md">
+        <span>Selengkapnya</span>
+        <!-- <svg class="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+        </svg> -->
+    </a>
+</div>
 
     </div>
 
@@ -2113,22 +2079,22 @@
         </div>
 
         <!-- BUTTON -->
-        <div class="mt-8 text-center">
-            <a href="#"
-                class="inline-flex items-center rounded-lg bg-sky-600 px-6 py-3 font-medium text-white transition hover:bg-sky-700">
-                Lihat Informasi Terbaru
-                <svg class="ml-2 h-5 w-5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24">
-                    <path stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M14 5l7 7m0 0l-7 7m7-7H3">
-                    </path>
-                </svg>
-            </a>
-        </div>
+<div class="mt-8 text-center">
+    <a href="{{ route('informasi.detail') }}"
+        class="inline-flex items-center rounded-lg bg-sky-600 px-6 py-3 font-medium text-white transition-colors hover:bg-sky-700 group shadow-md">
+        <span>Selengkapnya</span>
+        <!-- <svg class="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24">
+            <path stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M14 5l7 7m0 0l-7 7m7-7H3">
+            </path>
+        </svg> -->
+    </a>
+</div>
 
     </div>
 </div>
