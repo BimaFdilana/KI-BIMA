@@ -489,7 +489,7 @@
                 </button>
             </div>
         </div>
-        
+
         <!-- App Info Sections -->
         <div id="app-info-section" x-show="showInfo" x-transition:enter="transition ease-out duration-300"
             x-transition:enter-start="opacity-0 transform translate-y-10"
@@ -508,6 +508,7 @@
             <div x-show="activeApp === 'belanja'"
     x-data="{ activeTab: 'overview' }"
     class="overflow-hidden rounded-2xl bg-gradient-to-br from-gray-100 to-gray-200">
+
     <!-- Header Belanja -->
 <!-- <div class="border-b border-gray-300 bg-white/70 px-8 py-6 backdrop-blur-sm">
     <div class="mx-auto flex max-w-7xl items-center gap-4">
@@ -533,6 +534,7 @@
 
     </div>
 </div> -->
+
 <div class="p-8">
 
     <!-- Header -->
