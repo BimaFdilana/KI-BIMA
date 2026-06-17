@@ -263,6 +263,32 @@
                         </div>
                     </li>
                 @endcan
+                <!-- Section Divider: Landingpage -->
+                <li class="pt-2">
+                    <div class="mb-2 border-t border-gray-100 pt-2">
+                        <h3 class="px-2 text-xs font-semibold uppercase tracking-wider text-gray-500"
+                            x-show="sidebarOpen">Landingpage</h3>
+                        <div class="h-4" x-show="!sidebarOpen"></div>
+                    </div>
+                </li>
+
+                <li class="text-sm">
+                    <x-side-link href="{{ route('artikel.index') }}" :active="request()->routeIs('artikel.*')"
+                        icon="fas fa-newspaper" text="Artikel" />
+                </li>
+                <li class="text-sm">
+                    <x-side-link href="{{ route('faq.index') }}" :active="request()->routeIs('faq.*')"
+                        icon="fas fa-question-circle" text="FAQ" />
+                </li>
+                <li class="text-sm">
+                    <x-side-link href="{{ route('pesan.index') }}" :active="request()->routeIs('pesan.*')"
+                        icon="fas fa-envelope" text="Pesan" />
+                </li>
+                <li class="text-sm">
+                    <x-side-link href="{{ route('product.index') }}" :active="request()->routeIs('product.*')"
+                        icon="fas fa-box" text="Product" />
+                </li>
+
                 <!-- failed jobs -->
                 @role('programmer')
                     <li class="pt-2">
