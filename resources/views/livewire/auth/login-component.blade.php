@@ -90,6 +90,7 @@
     </div>
 
     <!-- Verification Modal -->
+    @if ($showVerificationModal)
     <x-modal wire:model="showVerificationModal">
         <div class="sm:mx-auto sm:w-full sm:max-w-md">
             <div class="rounded-xl bg-white p-6 shadow-xl">
@@ -210,8 +211,10 @@
             </div>
         </div>
     </x-modal>
+    @endif
 
     <!-- Recovery Code Modal -->
+    @if ($showRecoveryCodeModal)
     <x-modal wire:model="showRecoveryCodeModal">
         <div class="sm:mx-auto sm:w-full sm:max-w-md">
             <div class="rounded-xl bg-white p-6 shadow-xl">
@@ -263,6 +266,7 @@
             </div>
         </div>
     </x-modal>
+    @endif
 
     <script>
         document.addEventListener('alpine:init', () => {

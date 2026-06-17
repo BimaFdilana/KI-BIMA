@@ -10,9 +10,9 @@ use Exception;
 
 class FonnteService
 {
-    protected string $apiKey;
+    protected ?string $apiKey;
     protected string $baseUrl;
-    protected string $accountToken;
+    protected ?string $accountToken;
 
     // API Endpoints
     const ENDPOINTS = [
@@ -41,13 +41,31 @@ class FonnteService
         $this->baseUrl = config('services.fonnte.base_url', 'https://api.fonnte.com');
         $this->accountToken = config('services.fonnte.account_token');
 
+        // Note: kredensial Fonnte tidak diwajibkan saat instansiasi agar service
+        // bisa di-resolve oleh container meski 2FA/WhatsApp tidak digunakan
+        // (mis. saat user login tanpa 2FA). Validasi dipindah ke ensureConfigured()
+        // yang dipanggil oleh metode yang benar-benar memerlukan API call.
         if (empty($this->apiKey)) {
-            Log::error('Fonnte API key not configured');
-            throw new InvalidArgumentException('Fonnte API key is required');
+            Log::warning('Fonnte API key not configured');
         }
 
         if (empty($this->accountToken)) {
-            Log::error('Fonnte account token not configured');
+            Log::warning('Fonnte account token not configured');
+        }
+    }
+
+    /**
+     * Pastikan kredensial Fonnte tersedia sebelum melakukan API call.
+     *
+     * @throws InvalidArgumentException
+     */
+    protected function ensureConfigured(bool $requireAccountToken = true): void
+    {
+        if (empty($this->apiKey)) {
+            throw new InvalidArgumentException('Fonnte API key is required');
+        }
+
+        if ($requireAccountToken && empty($this->accountToken)) {
             throw new InvalidArgumentException('Fonnte account token is required');
         }
     }

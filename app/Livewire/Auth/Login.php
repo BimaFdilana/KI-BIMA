@@ -118,13 +118,13 @@ class Login extends Component
 
         $user = UserModel::withTrashed()->where($loginField, $this->username)->first();
 
-        if ($user->trashed()) {
-            $this->addError('username', 'User is banned');
+        if (!$user) {
+            $this->addError('username', 'User not found');
             return;
         }
 
-        if (!$user) {
-            $this->addError('username', 'User not found');
+        if ($user->trashed()) {
+            $this->addError('username', 'User is banned');
             return;
         }
 

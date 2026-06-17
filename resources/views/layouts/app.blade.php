@@ -43,18 +43,16 @@
         </header>
     @endif
 
-    <!-- Page Content -->
-    <!-- <main>
-        {{ $slot }}
-    </main> -->
+    {{-- Page Content --}}
     <main>
-    @yield('content')
+        {{ $slot ?? '' }}
+        @yield('content')
 
-    <x-guest.download-footer />
-    <x-guest.footer-section />
+        <x-guest.download-footer />
+        <x-guest.footer-section />
 
-    <livewire:floatingMenu />
-</main>
+        <livewire:floatingMenu />
+    </main>
 
     @livewireScripts
 
